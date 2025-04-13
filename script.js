@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const voitureCard = document.createElement("div");
             voitureCard.classList.add("card");
             voitureCard.innerHTML = `
-                <img src="images/${reservation.nom.toLowerCase()}.png" alt="${reservation.nom}">
+                <img src="images/${reservation.nom.toUpperCase()}.png" alt="${reservation.nom}">
                 <h3>${reservation.nom}</h3>
                 <p><strong>Du:</strong> ${reservation.dateDebut} <br> <strong>Au:</strong> ${reservation.dateFin}</p>
                 <p><strong>Prix :</strong> ${prix} DH</p>
